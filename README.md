@@ -1,3 +1,12 @@
+Description of this fork
+=====
+This fork is maintained by Phoenix Robotik, for the only purpose of better supporting our hardware:
+* stm32f3
+* that's all for now.
+
+The original repository is here: https://github.com/libopencm3/libopencm3
+
+
 README
 ======
 
