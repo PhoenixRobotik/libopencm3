@@ -104,6 +104,14 @@ void flash_program_half_word(uint32_t address, uint16_t data)
 	FLASH_CR &= ~FLASH_CR_PG;
 }
 
+
+void flash_program_word(uint32_t address, uint32_t data)
+{
+	flash_program_half_word(address, (uint16_t)data);
+	flash_program_half_word(address+2, (uint16_t)(data>>16));
+}
+
+
 /*---------------------------------------------------------------------------*/
 /** @brief Erase a Page of FLASH
 

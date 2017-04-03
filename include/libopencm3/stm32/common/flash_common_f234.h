@@ -82,6 +82,7 @@ void flash_clear_bsy_flag(void);
 void flash_clear_status_flags(void);
 void flash_wait_for_last_operation(void);
 void flash_program_half_word(uint32_t address, uint16_t data);
+void flash_program_word(uint32_t address, uint32_t data);
 
 END_DECLS
 /**@}*/
