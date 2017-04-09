@@ -38,17 +38,17 @@ TGT_CFLAGS      += $(DEBUG_FLAGS)
 # ARFLAGS	= rcsv
 ARFLAGS		= rcs
 
-OBJS		= adc.o adc_common_v1.o can.o desig.o gpio.o pwr.o rcc.o \
+OBJS		= adc.o adc_common_v1.o desig.o gpio.o pwr.o rcc.o \
 		  rtc.o crypto.o
 
-OBJS            += crc_common_all.o dac_common_all.o dma_common_f24.o \
-                   gpio_common_all.o gpio_common_f0234.o i2c_common_v1.o \
-                   iwdg_common_all.o pwr_common_v1.o rtc_common_l1f024.o \
-                   spi_common_all.o spi_common_l1f124.o timer_common_all.o \
-                   timer_common_f0234.o timer_common_f24.o usart_common_all.o \
-		   usart_common_f124.o flash_common_f234.o flash_common_f24.o \
-		   hash_common_f24.o crypto_common_f24.o exti_common_all.o \
-		   rcc_common_all.o
+OBJS        += crc_common_all.o dac_common_all.o dma_common_f24.o \
+               gpio_common_all.o gpio_common_f0234.o i2c_common_v1.o \
+               iwdg_common_all.o pwr_common_v1.o rtc_common_l1f024.o \
+               spi_common_all.o spi_common_l1f124.o timer_common_all.o \
+               timer_common_f0234.o timer_common_f24.o usart_common_all.o \
+               usart_common_f124.o flash_common_f234.o flash_common_f24.o \
+               hash_common_f24.o crypto_common_f24.o exti_common_all.o \
+               rcc_common_all.o can_common_bxcan.o
 OBJS		+= rng_common_v1.o
 
 OBJS            += usb.o usb_standard.o usb_control.o usb_fx07_common.o \
@@ -56,7 +56,7 @@ OBJS            += usb.o usb_standard.o usb_control.o usb_fx07_common.o \
 
 OBJS		+= mac.o phy.o mac_stm32fxx7.o phy_ksz8051mll.o fmc.o
 
-OBJS		+= ltdc.o 
+OBJS		+= ltdc.o
 
 VPATH += ../../usb:../:../../cm3:../common
 VPATH += ../../ethernet

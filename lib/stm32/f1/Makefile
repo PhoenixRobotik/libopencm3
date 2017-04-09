@@ -35,7 +35,7 @@ TGT_CFLAGS      += $(DEBUG_FLAGS)
 # ARFLAGS	= rcsv
 ARFLAGS		= rcs
 
-OBJS		= adc.o adc_common_v1.o can.o desig.o flash.o gpio.o \
+OBJS		= adc.o adc_common_v1.o desig.o flash.o gpio.o \
                   rcc.o rtc.o timer.o
 OBJS		+= mac.o mac_stm32fxx7.o phy.o phy_ksz8051mll.o
 
@@ -44,7 +44,7 @@ OBJS            += crc_common_all.o dac_common_all.o dma_common_l1f013.o \
                    pwr_common_v1.o spi_common_all.o spi_common_l1f124.o \
                    timer_common_all.o usart_common_all.o usart_common_f124.o \
                    rcc_common_all.o exti_common_all.o \
-                   flash_common_f01.o
+                   flash_common_f01.o can_common_bxcan.o
 
 OBJS            += usb.o usb_control.o usb_standard.o usb_msc.o
 OBJS		+= usb_fx07_common.o usb_f107.o
